@@ -1,0 +1,43 @@
+[
+  {
+    "id": "heatwave",
+    "name": "Extreme Heatwave",
+    "icon": "flame",
+    "description": "A scorching atmospheric heat dome settles over the metropolis, driving air conditioner demand and straining the grid.",
+    "effects": {
+      "energyLoadAll": 25,
+      "happinessAll": -12,
+      "budgetCost": 6
+    },
+    "mitigations": [
+      { "actionId": "battery", "percent": 0.40, "label": "Battery Storage grid buffering" },
+      { "actionId": "solar", "percent": 0.15, "label": "Rooftop Solar peak shaving" }
+    ]
+  },
+  {
+    "id": "factory_closing",
+    "name": "Major Factory Closure",
+    "icon": "factory",
+    "description": "The largest heavy foundry closes down unexpectedly. Emissions plunge, but job losses devastate worker morale and tax revenue.",
+    "effects": {
+      "industrialEmissions": -20,
+      "industrialHappiness": -15,
+      "residentialHappiness": -15,
+      "budgetCost": 8
+    },
+    "mitigations": []
+  },
+  {
+    "id": "transport_strike",
+    "name": "Transit Workers Strike",
+    "icon": "alert-triangle",
+    "description": "A sudden metro union walkout forces commuters into private cars and rideshares, jamming all major thoroughfares.",
+    "effects": {
+      "trafficAll": 25,
+      "happinessAll": -10
+    },
+    "mitigations": [
+      { "actionId": "buses", "percent": 0.30, "label": "Municipal Bus contingency network" }
+    ]
+  }
+]

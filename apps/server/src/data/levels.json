@@ -1,0 +1,117 @@
+[
+  {
+    "id": "power",
+    "order": 1,
+    "title": "Clean Energy Grid",
+    "subtitle": "The Power Plant Challenge",
+    "npcId": "volt",
+    "npcName": "Professor Volt",
+    "npcRole": "Energy Architect",
+    "npcAvatar": "volt",
+    "buildingId": "power_plant",
+    "buildingName": "Helios Power Station",
+    "missionGoal": "Cut average energy load below 60 without depleting the municipal treasury.",
+    "targetCriteria": "Average Energy Load < 60",
+    "initialDialogue": "Greetings, Mayor! Our power grid is groaning under peak demand, especially in the Industrial sector. High energy load risks blackouts during heatwaves. Can you invest in Solar or Battery storage to cut our energy load below 60?",
+    "successDialogue": "Brilliant work, Mayor! The microgrid meters are in the green, and our grid is now vastly more reliable!",
+    "allowedActionIds": ["solar", "battery"],
+    "unlockedByDefault": true,
+    "passCondition": {
+      "metric": "avgEnergyLoad",
+      "operator": "lte",
+      "threshold": 60
+    }
+  },
+  {
+    "id": "transit",
+    "order": 2,
+    "title": "Transit Gridlock",
+    "subtitle": "The Transit Station Hub",
+    "npcId": "zoom",
+    "npcName": "Captain Zoom",
+    "npcRole": "Transit Commissioner",
+    "npcAvatar": "zoom",
+    "buildingId": "transit_station",
+    "buildingName": "Metro Central Station",
+    "missionGoal": "Relieve Downtown congestion (traffic < 75) while keeping emissions from spiking.",
+    "targetCriteria": "Downtown Traffic < 75",
+    "initialDialogue": "All aboard, Mayor! Downtown is bumper-to-bumper with cars honking all morning. If we expand electric buses or smart signals, we can clear the jam. Beware though: building more roads adds tailpipe emissions!",
+    "successDialogue": "Zoom zoom! Downtown traffic is flowing smoothly, and commuters are smiling again!",
+    "allowedActionIds": ["buses", "signals", "road", "congestion"],
+    "unlockedByDefault": false,
+    "passCondition": {
+      "metric": "downtownTraffic",
+      "operator": "lte",
+      "threshold": 75
+    }
+  },
+  {
+    "id": "waste",
+    "order": 3,
+    "title": "Circular Economy",
+    "subtitle": "The Recycling Center",
+    "npcId": "rina",
+    "npcName": "Rina the Recycler",
+    "npcRole": "Circular Economy Director",
+    "npcAvatar": "rina",
+    "buildingId": "recycling_center",
+    "buildingName": "EcoCycle Recovery Center",
+    "missionGoal": "Lower Industrial & Residential emissions through waste reduction and clean transit.",
+    "targetCriteria": "Industrial Emissions <= 80 & Residential Emissions <= 35",
+    "initialDialogue": "Hello Mayor! Trash is piling up and landfills are venting methane! If we roll out neighborhood waste recycling drives and clean transit, we can drive down emissions and boost citizen happiness!",
+    "successDialogue": "Incredible turnaround! Zero-waste sorting has cut emissions and local pride is at an all-time high!",
+    "allowedActionIds": ["recycling", "buses", "solar"],
+    "unlockedByDefault": false,
+    "passCondition": {
+      "metric": "industrialEmissions",
+      "operator": "lte",
+      "threshold": 80
+    }
+  },
+  {
+    "id": "hall",
+    "order": 4,
+    "title": "Fiscal & Social Equity",
+    "subtitle": "City Hall Chambers",
+    "npcId": "penny",
+    "npcName": "Penny the Treasurer",
+    "npcRole": "Municipal Comptroller",
+    "npcAvatar": "penny",
+    "buildingId": "city_hall",
+    "buildingName": "City Hall Council Chamber",
+    "missionGoal": "Balance your council priorities and achieve an overall Sustainability Index of at least 65.",
+    "targetCriteria": "Sustainability Index >= 65",
+    "initialDialogue": "Welcome to council chambers, Mayor! Dollars don't grow on trees. We need a holistic policy portfolio that balances Environment, Happiness, Cost, and Reliability without leaving any zone behind in happiness equity.",
+    "successDialogue": "Superb leadership! You balanced the budget and lifted quality of life across every neighborhood!",
+    "allowedActionIds": ["buses", "signals", "solar", "battery", "recycling", "congestion"],
+    "unlockedByDefault": false,
+    "passCondition": {
+      "metric": "sustainabilityIndex",
+      "operator": "gte",
+      "threshold": 65
+    }
+  },
+  {
+    "id": "crisis",
+    "order": 5,
+    "title": "The Resilience Test",
+    "subtitle": "Crisis Command Tower",
+    "npcId": "blaze",
+    "npcName": "Chief Blaze",
+    "npcRole": "Disaster Response Commander",
+    "npcAvatar": "blaze",
+    "buildingId": "crisis_tower",
+    "buildingName": "Crisis Command Tower",
+    "missionGoal": "Survive an unexpected crisis shock and restore city resilience to 70+.",
+    "targetCriteria": "Resilience Score >= 70 after crisis shock & recovery",
+    "initialDialogue": "Attention Mayor! A surprise crisis is threatening our city! Will our earlier investments in batteries, solar, or buses hold up, or will the grid buckle? Trigger the emergency protocols and execute the recovery plan!",
+    "successDialogue": "Outstanding disaster management, Mayor! Our city withstood the shock and bounced back stronger than ever!",
+    "allowedActionIds": ["battery", "solar", "buses", "recycling", "signals"],
+    "unlockedByDefault": false,
+    "passCondition": {
+      "metric": "resilienceScore",
+      "operator": "gte",
+      "threshold": 70
+    }
+  }
+]

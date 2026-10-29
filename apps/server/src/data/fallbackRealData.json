@@ -1,0 +1,64 @@
+{
+  "cities": {
+    "london": {
+      "cityName": "London, United Kingdom",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "temperatureC": 17.5,
+      "aqi": 38,
+      "pm25": 11.2,
+      "pm10": 18.4,
+      "weatherCondition": "Partly Cloudy",
+      "source": "Open-Meteo European AQI / ECMWF Forecast (Bundled Cache)",
+      "timestamp": "2026-10-08T12:00:00Z"
+    },
+    "tokyo": {
+      "cityName": "Tokyo, Japan",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "temperatureC": 21.0,
+      "aqi": 42,
+      "pm25": 14.5,
+      "pm10": 22.1,
+      "weatherCondition": "Clear Sky",
+      "source": "Open-Meteo European AQI / JMA Forecast (Bundled Cache)",
+      "timestamp": "2026-10-08T12:00:00Z"
+    },
+    "new york": {
+      "cityName": "New York, United States",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "temperatureC": 19.2,
+      "aqi": 45,
+      "pm25": 16.0,
+      "pm10": 24.0,
+      "weatherCondition": "Scattered Clouds",
+      "source": "Open-Meteo US AQI / NOAA GFS (Bundled Cache)",
+      "timestamp": "2026-10-08T12:00:00Z"
+    },
+    "delhi": {
+      "cityName": "Delhi, India",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "temperatureC": 31.8,
+      "aqi": 125,
+      "pm25": 82.5,
+      "pm10": 140.0,
+      "weatherCondition": "Hazy Sunshine",
+      "source": "Open-Meteo Air Quality CAMS (Bundled Cache)",
+      "timestamp": "2026-10-08T12:00:00Z"
+    },
+    "default": {
+      "cityName": "Sample Green Metropolis",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "temperatureC": 20.0,
+      "aqi": 35,
+      "pm25": 9.5,
+      "pm10": 15.0,
+      "weatherCondition": "Breezy & Sunny",
+      "source": "Bundled Baseline Met Data",
+      "timestamp": "2026-10-08T12:00:00Z"
+    }
+  }
+}

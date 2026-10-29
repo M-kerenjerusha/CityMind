@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #0f172a;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom Cartoon Game UI Components with Prominent Visible Typography */
+@layer components {
+  .btn-cartoon-green {
+    @apply bg-emerald-500 hover:bg-emerald-400 active:translate-y-1 text-slate-950 font-black text-base sm:text-lg px-6 py-3.5 rounded-2xl border-b-4 border-emerald-700 shadow-cartoon transition-all duration-150 flex items-center justify-center gap-2.5 tracking-wide;
+  }
+
+  .game-banner-title {
+    font-family: 'Fredoka', system-ui, -apple-system, sans-serif;
+    color: #ffeb3b;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-shadow: 
+      0 3px 0 #1e3a8a,
+      0 6px 0 #0f172a,
+      0 10px 18px rgba(0, 0, 0, 0.45);
+  }
+
+  .btn-start-game {
+    @apply bg-gradient-to-b from-lime-400 to-emerald-500 hover:from-lime-300 hover:to-emerald-400 text-slate-950 font-black text-xl sm:text-2xl md:text-3xl px-10 py-5 rounded-3xl border-b-4 border-emerald-800 shadow-cartoon active:border-b-2 active:translate-y-1 transition-all duration-150 flex items-center justify-center gap-3 tracking-wide;
+  }
+
+  .btn-cartoon-blue {
+    @apply bg-sky-500 hover:bg-sky-400 active:translate-y-1 text-slate-950 font-black text-base sm:text-lg px-6 py-3.5 rounded-2xl border-b-4 border-sky-700 shadow-cartoon transition-all duration-150 flex items-center justify-center gap-2.5 tracking-wide;
+  }
+
+  .btn-cartoon-amber {
+    @apply bg-amber-400 hover:bg-amber-300 active:translate-y-1 text-slate-950 font-black text-base sm:text-lg px-6 py-3.5 rounded-2xl border-b-4 border-amber-600 shadow-cartoon transition-all duration-150 flex items-center justify-center gap-2.5 tracking-wide;
+  }
+
+  .btn-cartoon-crimson {
+    @apply bg-rose-600 hover:bg-rose-500 active:translate-y-1 text-white font-black text-base sm:text-lg px-6 py-3.5 rounded-2xl border-b-4 border-rose-800 shadow-cartoon transition-all duration-150 flex items-center justify-center gap-2.5 tracking-wide;
+  }
+
+  .btn-cartoon-slate {
+    @apply bg-slate-800 hover:bg-slate-700 active:translate-y-1 text-white font-black text-sm sm:text-base px-5 py-2.5 rounded-2xl border-b-4 border-slate-950 shadow-cartoon transition-all duration-150 flex items-center justify-center gap-2;
+  }
+
+  .card-cartoon {
+    @apply bg-white rounded-3xl border-3 border-slate-800 shadow-cartoon overflow-hidden;
+  }
+
+  .speech-bubble {
+    @apply relative bg-white border-3 border-slate-900 rounded-3xl p-5 shadow-cartoon;
+  }
+
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 36px;
+    border-width: 16px 16px 0;
+    border-style: solid;
+    border-color: #0f172a transparent;
+    display: block;
+    width: 0;
+  }
+
+  .speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 38px;
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+  }
+
+  /* Shimmer / Gleam animation for buttons and reward badges */
+  .shine-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  .shine-effect::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(25deg);
+    animation: shineSweep 4s ease-in-out infinite;
+  }
+}
+
+/* Motion Graphics Keyframes */
+@keyframes shineSweep {
+  0% { left: -60%; }
+  30%, 100% { left: 140%; }
+}
+
+@keyframes cloudFloat {
+  0% { transform: translateX(-180px); }
+  100% { transform: translateX(calc(100vw + 180px)); }
+}
+
+@keyframes roadCarMove {
+  0% { transform: translateX(-60px); }
+  100% { transform: translateX(calc(100vw + 60px)); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.4), 0 6px 0 rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.8), 0 6px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.animate-float-gentle {
+  animation: floatGentle 3.5s ease-in-out infinite;
+}
+
+.animate-cloud-slow {
+  animation: cloudFloat 48s linear infinite;
+}
+
+.animate-cloud-fast {
+  animation: cloudFloat 26s linear infinite;
+}
+
+/* Print Stylesheet for Mayor's Report */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .card-cartoon {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+}

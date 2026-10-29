@@ -1,0 +1,136 @@
+[
+  {
+    "id": "buses",
+    "name": "Increase Buses",
+    "cost": 15,
+    "category": "transit",
+    "description": "Expand electric and hybrid rapid bus transit corridors connecting Downtown with Residential areas.",
+    "icon": "bus",
+    "effectsSummary": "Downtown & Residential: Traffic -12, Emissions -8; Happiness +5",
+    "targetZones": ["downtown", "residential"],
+    "deltas": {
+      "traffic": -12,
+      "emissions": -8,
+      "energy_load": 0,
+      "happiness": 5
+    },
+    "heatwaveMitigation": 0,
+    "strikeMitigation": 0.30
+  },
+  {
+    "id": "signals",
+    "name": "Smart Traffic Signals",
+    "cost": 8,
+    "category": "transit",
+    "description": "Deploy AI-driven adaptive traffic signal networks to smooth vehicle flow at congested intersections.",
+    "icon": "traffic-light",
+    "effectsSummary": "Downtown: Traffic -8, Emissions -4",
+    "targetZones": ["downtown"],
+    "deltas": {
+      "traffic": -8,
+      "emissions": -4,
+      "energy_load": 0,
+      "happiness": 0
+    },
+    "heatwaveMitigation": 0,
+    "strikeMitigation": 0
+  },
+  {
+    "id": "road",
+    "name": "Build New Road",
+    "cost": 25,
+    "category": "transit",
+    "description": "Construct an arterial bypass to relieve core congestion, though inducing extra vehicle emissions.",
+    "icon": "road",
+    "effectsSummary": "Downtown: Traffic -15, Emissions +6, Happiness -3",
+    "targetZones": ["downtown"],
+    "deltas": {
+      "traffic": -15,
+      "emissions": 6,
+      "energy_load": 0,
+      "happiness": -3
+    },
+    "heatwaveMitigation": 0,
+    "strikeMitigation": 0
+  },
+  {
+    "id": "solar",
+    "name": "Rooftop Solar",
+    "cost": 20,
+    "category": "energy",
+    "description": "Incentivize distributed solar PV panels across commercial, residential, and public rooftops.",
+    "icon": "sun",
+    "effectsSummary": "All Zones: Energy Load -12, Emissions -10",
+    "targetZones": ["industrial", "residential", "downtown", "outskirts"],
+    "deltas": {
+      "traffic": 0,
+      "emissions": -10,
+      "energy_load": -12,
+      "happiness": 0
+    },
+    "heatwaveMitigation": 0.15,
+    "strikeMitigation": 0
+  },
+  {
+    "id": "battery",
+    "name": "Battery Storage",
+    "cost": 18,
+    "category": "energy",
+    "description": "Install grid-scale battery storage facilities to balance load spikes and buffer peak demand.",
+    "icon": "battery-charging",
+    "effectsSummary": "All Zones: Energy Load -8; Reduces Heatwave Damage by 40%",
+    "targetZones": ["industrial", "residential", "downtown", "outskirts"],
+    "deltas": {
+      "traffic": 0,
+      "emissions": 0,
+      "energy_load": -8,
+      "happiness": 0
+    },
+    "heatwaveMitigation": 0.40,
+    "strikeMitigation": 0
+  },
+  {
+    "id": "recycling",
+    "name": "Waste Recycling Drive",
+    "cost": 10,
+    "category": "waste",
+    "description": "Launch neighborhood compost programs, circular sorting hubs, and industrial materials exchange.",
+    "icon": "recycle",
+    "effectsSummary": "Industrial & Residential: Emissions -6, Happiness +4",
+    "targetZones": ["industrial", "residential"],
+    "deltas": {
+      "traffic": 0,
+      "emissions": -6,
+      "energy_load": 0,
+      "happiness": 4
+    },
+    "heatwaveMitigation": 0,
+    "strikeMitigation": 0
+  },
+  {
+    "id": "congestion",
+    "name": "Congestion Pricing",
+    "cost": 5,
+    "category": "policy",
+    "description": "Levy an automated peak-hour toll on private vehicles entering the downtown cordon.",
+    "icon": "dollar-sign",
+    "effectsSummary": "Downtown Traffic -10, Residential Happiness -8 (Trade-off)",
+    "targetZones": ["downtown", "residential"],
+    "zoneSpecificDeltas": {
+      "downtown": {
+        "traffic": -10,
+        "emissions": 0,
+        "energy_load": 0,
+        "happiness": 0
+      },
+      "residential": {
+        "traffic": 0,
+        "emissions": 0,
+        "energy_load": 0,
+        "happiness": -8
+      }
+    },
+    "heatwaveMitigation": 0,
+    "strikeMitigation": 0
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "mira",
+    "name": "Mayor Mira",
+    "title": "Senior City Mentor",
+    "avatar": "mira",
+    "voiceStyle": "encouraging, visionary, welcoming",
+    "bio": "Former beloved mayor of Neo Metropolis who guided the first green transit reforms."
+  },
+  {
+    "id": "volt",
+    "name": "Professor Volt",
+    "title": "Chief Energy Architect",
+    "avatar": "volt",
+    "voiceStyle": "quirky, analytical, enthusiastic about renewables",
+    "bio": "Inventor of smart microgrid algorithms and lover of clean solar watts."
+  },
+  {
+    "id": "zoom",
+    "name": "Captain Zoom",
+    "title": "Transit Commissioner",
+    "avatar": "zoom",
+    "voiceStyle": "brisk, energetic, obsessed with bus lanes and flow",
+    "bio": "Veteran traffic controller who dreams of congestion-free boulevards."
+  },
+  {
+    "id": "rina",
+    "name": "Rina the Recycler",
+    "title": "Circular Economy Director",
+    "avatar": "rina",
+    "voiceStyle": "passionate, community-focused, zero-waste advocate",
+    "bio": "Turned a neighborhood composting group into a city-wide recycling revolution."
+  },
+  {
+    "id": "penny",
+    "name": "Penny the Treasurer",
+    "title": "Municipal Comptroller",
+    "avatar": "penny",
+    "voiceStyle": "prudent, sharp, balances pennies with citizen equity",
+    "bio": "Fiscal watchdog ensuring every dollar spent brings lasting social dividends."
+  },
+  {
+    "id": "blaze",
+    "name": "Chief Blaze",
+    "title": "Disaster Response Commander",
+    "avatar": "blaze",
+    "voiceStyle": "intense, resolute, protective of citizen safety",
+    "bio": "First-responder veteran who tests city resilience against heatwaves and shocks."
+  },
+  {
+    "id": "gemi",
+    "name": "Gemi the Owl",
+    "title": "CityMind AI Advisor",
+    "avatar": "gemi",
+    "voiceStyle": "wise, calm, concise, strictly grounded in simulation data",
+    "bio": "The all-seeing municipal companion powered by Google Gemini intelligence."
+  }
+]

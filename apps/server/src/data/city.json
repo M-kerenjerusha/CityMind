@@ -1,0 +1,56 @@
+{
+  "cityName": "Neo Metropolis",
+  "mayorName": "Alex",
+  "mayorAvatar": "mayor_1",
+  "difficulty": "normal",
+  "month": 1,
+  "budget": 100,
+  "initialBudget": 100,
+  "credits": 25,
+  "xp": 0,
+  "isRealData": false,
+  "priorities": {
+    "environment": 40,
+    "happiness": 30,
+    "cost": 20,
+    "reliability": 10
+  },
+  "zones": {
+    "industrial": {
+      "id": "industrial",
+      "name": "Smokestack Industrial Park",
+      "traffic": 50,
+      "emissions": 85,
+      "energy_load": 80,
+      "happiness": 45,
+      "description": "Heavy manufacturing hub with high power demands and smokestacks."
+    },
+    "residential": {
+      "id": "residential",
+      "name": "Sunnyvale Residential District",
+      "traffic": 40,
+      "emissions": 40,
+      "energy_load": 55,
+      "happiness": 65,
+      "description": "Quiet neighborhoods, parks, and schools sensitive to air pollution."
+    },
+    "downtown": {
+      "id": "downtown",
+      "name": "Metro Core Downtown",
+      "traffic": 80,
+      "emissions": 70,
+      "energy_load": 70,
+      "happiness": 50,
+      "description": "Dense commercial towers, gridlocked streets, and bustling tech hubs."
+    },
+    "outskirts": {
+      "id": "outskirts",
+      "name": "Green Ridge Outskirts",
+      "traffic": 25,
+      "emissions": 25,
+      "energy_load": 35,
+      "happiness": 75,
+      "description": "Sprawling suburbs and open agricultural greenery."
+    }
+  }
+}
